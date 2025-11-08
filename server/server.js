@@ -19,7 +19,7 @@ await connectDB()
 await connectCloudinary()
 
 // Allow multiple origins
-const allowedOrigins = ['http://localhost:5173',process.env.VITE_BACKEND_URL,'https://greencart-leqh.onrender.com']
+const allowedOrigins = ['http://localhost:5173',process.env.VITE_BACKEND_URL,'https://greenstack-two.vercel.app/']
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 
